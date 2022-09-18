@@ -1,7 +1,7 @@
 require_relative 'paddle.rb'
 class AI_Paddle
-  def initialize(width:, height:, color:, x:, y:, speed: 10)
-    @paddle_shape = Paddle.new(width: width, height: height, color: color, x: x, y: y, speed: speed)
+  def initialize(width:, height:, color:, x:, y:, screen_height:, speed: 10)
+    @paddle_shape = Paddle.new(width: width, height: height, color: color, x: x, y: y, screen_height: screen_height, speed: speed)
   end
 
   def update(ball)
